@@ -549,7 +549,7 @@
 
 	var toppingsArray = [];
 	toppingsArray.push(JSONFREDDATA.observations[i].date);
-	toppingsArray.push((JSONFREDDATA.observations[i].value));
+	toppingsArray.push(Number(JSONFREDDATA.observations[i].value));
 	arraysData.push(itemArray);
 	
 	var data = new google.visualization.DataTable();
